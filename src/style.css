@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  scrollbar-base-color: #5F9FDB;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-highlight-color: #C0C0C0;
+  scrollbar-track-color: #fff;
+  scrollbar-arrow-color: #fff;
+  scrollbar-shadow-color: #fff;
+  scrollbar-dark-shadow-color: #fff;
+  scrollbar-width: 3px;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 3px;
+  background: #5F9FDB;
+}
+
+div{
+  float: left;
+}
+
+.header {
+  height: 8vh;
+  width: 100%;
+  text-align: center;
+  line-height: 5vh;
+  font-size: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+}
+
+.header:before {
+  float: left;
+  content: "";
+  width: 100px;
+  heiht: 40px;
+  background: #fff;
+  position: absolute;
+  content: "sticked";
+  left: 10%;
+  top: -40px;
+  opacity: 0;
+  color: #000;
+  font-variant: small-caps;
+  font-size: 20px;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.header.sticked {
+  opacity: 0.9;
+}
+
+.header.sticked:before {
+  top: 0;
+  opacity: 0.6;
+}
+
+.header.sticked:hover::before {
+  top: 0;
+  opacity: 1;
+}
+
+.content {
+  height: 120vh;
+  width: 100%;
+  text-align: center;
+  line-height: 90vh;
+  font-size: 200px;
+}
+
+.content-min {
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+  font-size: 100px; 
+}
+
+.bg-1 {
+  background: rgb(134, 206, 173);
+}
+
+.bg-2 {
+  background: rgb(150, 206, 134);
+}
+
+.bg-3 {
+    background: rgb(163, 229, 77);
+}
