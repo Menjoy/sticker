@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
   scrollbar-base-color: #5F9FDB;
   scrollbar-3dlight-color: #C0C0C0;
   scrollbar-highlight-color: #C0C0C0;
